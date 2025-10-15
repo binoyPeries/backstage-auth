@@ -10,10 +10,11 @@ import {
   ProfileInfoApi,
   BackstageIdentityApi,
   SessionApi,
+  OAuthApi,
 } from '@backstage/core-plugin-api';
 
 export const myAsgardeoAuthApiRef = createApiRef<
-  ProfileInfoApi & BackstageIdentityApi & SessionApi
+  ProfileInfoApi & BackstageIdentityApi & SessionApi & OAuthApi
 >({
   id: 'my-asgardeo',
 });

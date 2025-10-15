@@ -113,9 +113,8 @@ auth:
         additionalScopes: ['openid', 'profile', 'offline_access']
         callbackUrl: http://localhost:7007/api/auth/my-asgardeo/handler/frame
         prompt: auto
-        # Add clock tolerance to handle JWT timing issues (significantly increased)
+        # Add clock tolerance to handle JWT timing issues
         clockTolerance: 300
-        # Additional OIDC configuration to handle timing
         skipUserInfo: false
         # Enable refresh token flow
         refreshTokenUrl: https://api.asgardeo.io/t/binoyperiesintern/oauth2/token

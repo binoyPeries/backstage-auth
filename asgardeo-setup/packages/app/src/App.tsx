@@ -24,6 +24,7 @@ import { apis, myAsgardeoAuthApiRef } from './apis';
 import { entityPage } from './components/catalog/EntityPage';
 import { searchPage } from './components/search/SearchPage';
 import { Root } from './components/Root';
+import { TokenDemo } from './components/TokenDemo';
 
 import {
   AlertDisplay,
@@ -111,6 +112,7 @@ const routes = (
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
     <Route path="/notifications" element={<NotificationsPage />} />
+    <Route path="/token-demo" element={<TokenDemo />} />
   </FlatRoutes>
 );
 
